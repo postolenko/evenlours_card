@@ -1,7 +1,9 @@
 function getArrowsPosition() {
     $('.goods_slider').each(function() {
         sliderName = $(this).attr("data-slider");
-        $("[data-slider-arrows = '"+ sliderName +"'").append($(this).find(".slick-arrow"));
+        if( $("[data-slider-arrows] .slick-arrow").length == 0 ) {
+            $("[data-slider-arrows = '"+ sliderName +"'").append($(this).find(".slick-arrow"));
+        }
     });
 }
 
