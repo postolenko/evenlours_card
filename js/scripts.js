@@ -170,6 +170,11 @@ $(document).ready(function() {
           parentBlock.animate({
             "height" : innerHeight + "px"
           }, 300);
+            setTimeout(function() {
+                parentBlock.css({
+                    "height" : "auto"
+                });
+            }, 500);
           $(this).addClass("active");
       } else {
           parentBlock.animate({
