@@ -18,21 +18,15 @@ var maxRate,
 
 
 $(window).load(function() {
-
     getArrowsPosition();
-
 });
 
 $(window).resize(function() {
-
     getArrowsPosition();
-
 });
 
 $(document).scroll(function() {
-
-
-
+    getArrowsPosition();
 });
 
 $(document).ready(function() {
@@ -41,7 +35,7 @@ $(document).ready(function() {
         $(".big_slider").not(".slick-initialized").slick({
             dots: false,
             arrows: false,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 4000,
             speed: 1200,
             slidesToShow: 1,
@@ -56,7 +50,7 @@ $(document).ready(function() {
             arrows: false,
             autoplay: true,
             autoplaySpeed: 4000,
-            // speed: 1200,
+            speed: 1200,
             slidesToShow: 5,
             slidesToScroll: 1,
             vertical: true,
@@ -105,10 +99,9 @@ $(document).ready(function() {
             arrows: true,
             autoplay: true,
             autoplaySpeed: 4000,
-            // speed: 1200,
+            speed: 1200,
             slidesToShow: 4,
             slidesToScroll: 1,
-            // appendArrows: $("[data-slider-arrows = '"+ $(this).attr('data-slider')+"']"),
             responsive: [
                 {
                   breakpoint: 1124,
