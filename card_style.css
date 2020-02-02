@@ -660,11 +660,11 @@ a {
     -webkit-flex-wrap: wrap;
     align-items: center;
     -webkit-align-items: center;
-    margin: 10px -7px;
+    margin: 5px -7px;
 }
 
 .rating_sect > div {
-    padding: 0 7px;
+    padding: 7px;
 }
 
 .rating_set {
@@ -696,7 +696,7 @@ a {
     -webkit-flex-wrap: wrap;
     align-items: baseline;
     -webkit-align-items: baseline;
-    margin: 17px -10px 4px -10px;
+    margin: 10px -10px 4px -10px;
 }
 
 .price_wrapp > div {
@@ -1773,11 +1773,12 @@ a {
 }
 
 .goods_slider .slide {
-
+    padding: 0 10px;
 }
 
 .good_thumb {
-    max-width: 270px;
+    /*max-width: 270px;*/
+    max-width: 320px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -2008,15 +2009,11 @@ a {
     z-index: 2;
 }
 
-.modals_sect .modal_white {
-    margin: 30px auto;
-    max-width: 410px;
-}
-
 .modal_white {
     max-width: 410px;
     background: #FFFFFF;
     position: relative;
+    margin: 40px auto;
     padding: 20px 30px 25px 30px;
 }
 
@@ -2351,3 +2348,196 @@ a {
 }
 
 /*-- /Bootstrap Modal Styles --*/
+
+@media only screen and (max-width: 1190px) {
+
+    .card_page_row {
+        overflow: hidden;
+    }
+
+    .slider_templ .left_col {
+        padding-right: 1%;
+    }
+
+    .slider_templ .right_col {
+        padding-left: 1%;
+    }
+
+    .four_cols {
+        margin: 0 -15px;
+    }
+
+    .four_cols .col {
+        width: 33.33%;
+        padding: 15px;
+    }
+
+    .form_wrapp {
+        padding: 15px 25px 20px 25px;
+    }
+
+}
+
+@media only screen and (max-width: 970px) {
+
+    .slider_templ {
+        display: block;
+    }
+
+    .slider_templ .left_col {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .slider_templ .right_col {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .card_slider_wrapp {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .info_box {
+        padding: 20px 15px;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .big_slider .img_box {
+        height: 395px;
+    }
+
+    .miniature_slider .img_box {
+        margin: 3px 0;
+    }
+
+    .four_cols .col {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .form_cols {
+        display: block;
+        margin: 13px 0 10px 0;
+    }
+
+    .form_cols .col:nth-child(1),
+    .form_cols .col:nth-child(2),
+    .form_cols .col:nth-child(3) {
+        width: 100%;
+        padding: 6px 0;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    .slider_templ {
+        margin: 5px 0;
+    }
+
+    .card_slider_wrapp {
+        display: block;
+    }
+
+    .big_slider_wrapp {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .big_slider .img_box {
+        height: 300px;
+    }
+
+    .miniature_slider_wrapp {
+        width: 100%;
+        margin: 5px 0;
+        padding-right: 0;
+    }
+
+    .miniature_slider .slide {
+        padding: 3px;
+    }
+
+    .dropdown_box:after {
+        height: 104px;
+    }
+
+    .four_cols {
+        margin: 0;
+    }
+
+    .four_cols .col {
+        width: 100%;
+        padding: 15px 0;
+    }
+
+    .modal_white {
+        margin: 50px auto 30px auto;
+        padding: 20px 15px 25px 15px;
+    }
+
+    .modal_white .close_btn {
+        top: -30px;
+        right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+    .two_cols_templ {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+    }
+
+    .two_cols_templ .col_1 {
+        width: 100%;
+        padding: 3px 0;
+    }
+
+    .two_cols_templ .col_2 {
+        width: 100%;
+        padding: 3px 0;
+    }
+
+    .price_wrapp {
+        margin: 5px -10px 4px -10px;
+    }
+
+    .grey_boxes {
+        margin: 5px -2px;
+    }
+
+    .grey_boxes .col {
+        width: 100%;
+        padding: 2px;
+    }
+
+    .text_tags {
+        margin: 10px -5px;
+    }
+
+    .form_wrapp {
+        padding: 15px 15px 20px 15px;
+    }
+
+    .goods_slider_title {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .goods_slider_title .col:nth-child(1) {
+        width: 100%;
+        padding: 0 0 10px 0;
+    }
+
+    .goods_slider_title .col:nth-child(2) {
+        width: 100%;
+    }
+
+}
