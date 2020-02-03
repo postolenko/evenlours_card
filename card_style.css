@@ -439,19 +439,30 @@ a {
 }
 
 .like_tooltip {
-    width: 180px;
+    white-space: nowrap;
     background-color: #560319;
     text-transform: uppercase;
-    border-radius: 2px;
     font-family: 'Segoe UI';
     font-weight: normal;
     color: #fff;
-    font-size: 9px;
-    line-height: 16px;
-    padding: 5px 15px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    font-size: 10px;
+    line-height: 12px;
+    padding: 5px 9px 6px;
+}
+
+.like_tooltip:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -5px;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3px 0 3px 5px;
+	border-color: transparent transparent transparent #560319;
 }
 
 .like_link.active {
@@ -489,7 +500,7 @@ a {
 }
 
 .like_link:hover .like_tooltip {
-    margin-right: 10px;
+    margin-right: 8px;
     opacity: 1;
 }
 
@@ -1180,6 +1191,10 @@ a {
     display: -webkit-flex;
     align-items: center;
     -webkit-align-items: center;
+    justify-content: center;
+    -webkit-justify-content: center;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
     width: 100%;
     min-height: 58px;
     background: #F2F2F2;
@@ -1194,11 +1209,6 @@ a {
     font-weight: 600;
 }
 
-.grey_box > div {
-    width: 100%;
-    text-align: center;
-}
-
 .grey_box .icons_link {
     margin: 0 5px;
 }
@@ -1206,7 +1216,6 @@ a {
 .grey_box p {
     display: inline-block;
     vertical-align: top;
-    padding-top: 4px;
     padding-right: 10px;
 }
 
@@ -1768,27 +1777,43 @@ a {
 }
 
 .good_like_tooltip {
-    width: 170px;
+	position: relative;
     background-color: #560319;
-    text-transform: uppercase;
-    padding: 5px 15px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+    padding: 5px 9px 6px;
+}
+
+.good_like_tooltip:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	right: -5px;
+	-webkit-transform: translate(0, -50%);
+	-moz-transform: translate(0, -50%);
+	transform: translate(0, -50%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 3px 0 3px 5px;
+	border-color: transparent transparent transparent #560319;
 }
 
 .good_like_tooltip p {
-    font-family: 'Segoe UI';
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-family: 'Segoe UI';
     font-weight: normal;
     color: #fff;
     font-size: 10px;
-    line-height: 16px;
+    line-height: 12px;
 }
 
 .good_like .good_like_tooltip {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 100%;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
     margin-right: 0;
     opacity: 0;
     -webkit-transition-property: opacity, margin-right;
