@@ -439,14 +439,14 @@ a {
 }
 
 .like_tooltip {
-    width: 170px;
+    width: 180px;
     background-color: #560319;
     text-transform: uppercase;
     border-radius: 2px;
     font-family: 'Segoe UI';
     font-weight: normal;
     color: #fff;
-    font-size: 10px;
+    font-size: 9px;
     line-height: 16px;
     padding: 5px 15px;
     -webkit-border-radius: 3px;
@@ -460,7 +460,7 @@ a {
 
 .like_link .like_tooltip {
     position: absolute;
-    top: 0;
+    top: 50%;
     right: 100%;
     margin-right: 0;
     opacity: 0;
@@ -483,6 +483,9 @@ a {
     transition-property: opacity, margin-right;
     transition-duration: .3s;
     transition-timing-function: ease;
+    -webkit-transform: translate(0, -50%);
+    -moz-transform: translate(0, -50%);
+    transform: translate(0, -50%);
 }
 
 .like_link:hover .like_tooltip {
@@ -573,7 +576,7 @@ a {
     opacity: 1;
 }
 
-.card_content h3 {
+.card_content h1 {
     padding: 2px 0;
     font-family: 'Segoe UI';
     font-weight: normal;
@@ -791,13 +794,13 @@ a {
 }
 
 .two_cols_templ .col_1 {
-    width: 52%;
-    padding-right: 5px;
+    width: 50%;
+    padding-right: 2px;
 }
 
 .two_cols_templ .col_2 {
-    width: 48%;
-    padding-left: 5px;
+    width: 50%;
+    padding-left: 2px;
 }
 
 .count_gpod_wrapp {
@@ -1359,7 +1362,7 @@ a {
     background-position: center;
 }
 
-.four_cols h3 {
+.four_cols h2 {
     padding: 9px 0 11px;
     font-family: "Segoe UI";
     font-weight: bold;
@@ -1650,16 +1653,18 @@ a {
 .goods_slider_title {
     display: flex;
     display: -webkit-flex;
+    align-items: center;
+    -webkit-align-items: center;
     margin: 26px 0;
 }
 
 .goods_slider_title .col:nth-child(1) {
-    width: calc(100% - 100px);
-    padding-right: 10px;
+    width: calc(100% - 80px);
+    padding-right: 5px;
 }
 
 .goods_slider_title .col:nth-child(2) {
-    width: 100px;
+    width: 80px;
 }
 
 .goods_slider_title h2 {
@@ -1898,7 +1903,7 @@ a {
     background: #F2F2F2;
 }
 
-.info_box h2 {
+.info_box h3 {
     padding: 8px 0;
     font-family: "Segoe UI";
     font-weight: 600;
@@ -2261,7 +2266,11 @@ a {
 
 /*-- /Bootstrap Modal Styles --*/
 
-@media only screen and (max-width: 1190px) {
+@media only screen and (max-width: 1200px) {
+
+	.card_page {
+		padding: 0 20px;
+	}
 
     .card_page_row {
         overflow: hidden;
@@ -2327,6 +2336,10 @@ a {
         margin: 3px 0;
     }
 
+    .form_wrapp {
+	    padding: 15px 65px 30px 65px;
+	}
+
     .four_cols .col {
         width: 50%;
         padding: 15px;
@@ -2347,6 +2360,10 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
+
+	.card_page {
+		padding: 0 10px;
+	}
 
     .slider_templ {
         margin: 5px 0;
@@ -2387,6 +2404,10 @@ a {
         width: 100%;
         padding: 15px 0;
     }
+
+    .form_wrapp {
+	    padding: 15px 30px 20px 30px;
+	}
 
     .modal_white {
         margin: 50px auto 30px auto;
@@ -2438,7 +2459,7 @@ a {
         padding: 15px 15px 20px 15px;
     }
 
-    .goods_slider_title {
+/*    .goods_slider_title {
         display: block;
         margin: 10px 0;
     }
@@ -2450,6 +2471,6 @@ a {
 
     .goods_slider_title .col:nth-child(2) {
         width: 100%;
-    }
+    }*/
 
 }
