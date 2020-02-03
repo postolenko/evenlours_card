@@ -104,21 +104,21 @@ $(document).ready(function() {
             slidesToScroll: 1,
             responsive: [
                 {
-                  breakpoint: 1124,
+                  breakpoint: 1150,
                   settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1
                   }
                 },
                 {
-                  breakpoint: 800,
+                  breakpoint: 880,
                   settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1
                   }
                 },
                 {
-                  breakpoint: 560,
+                  breakpoint: 580,
                   settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1

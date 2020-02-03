@@ -1699,7 +1699,7 @@ a {
 }
 
 .good_thumb {
-    max-width: 320px;
+    width: 270px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -2357,6 +2357,11 @@ a {
         padding: 6px 0;
     }
 
+    .form_cols .red_pill {
+		max-width: 320px;
+		margin: 0 auto;
+	}
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -2458,19 +2463,5 @@ a {
     .form_wrapp {
         padding: 15px 15px 20px 15px;
     }
-
-/*    .goods_slider_title {
-        display: block;
-        margin: 10px 0;
-    }
-
-    .goods_slider_title .col:nth-child(1) {
-        width: 100%;
-        padding: 0 0 10px 0;
-    }
-
-    .goods_slider_title .col:nth-child(2) {
-        width: 100%;
-    }*/
 
 }
