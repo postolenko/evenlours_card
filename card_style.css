@@ -1275,12 +1275,28 @@ a {
     display: -webkit-flex;
     flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
-    margin: 0 -20px;
+    margin: 0 -27px;
 }
 
 .four_cols .col {
     width: 25%;
-    padding: 20px;
+    padding: 20px 27px;
+}
+
+.four_cols .col:nth-child(1) {
+    width: 25%;
+}
+
+.four_cols .col:nth-child(2) {
+    width: 26%;
+}
+
+.four_cols .col:nth-child(3) {
+    width: 25%;
+}
+
+.four_cols .col:nth-child(4) {
+    width: 24%;
 }
 
 .icon_9 {
@@ -2318,8 +2334,8 @@ a {
     }
 
     .four_cols .col {
-        width: 33.33%;
-        padding: 15px;
+        width: 33.33% !important;
+        padding: 15px !important;
     }
 
     .form_wrapp {
@@ -2366,7 +2382,7 @@ a {
     }
 
     .four_cols .col {
-        width: 50%;
+        width: 50% !important;
         padding: 15px;
     }
 
@@ -2436,7 +2452,7 @@ a {
     }
 
     .four_cols .col {
-        width: 100%;
+        width: 100% !important;
         padding: 15px 0;
     }
 
