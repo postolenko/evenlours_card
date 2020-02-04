@@ -50,7 +50,7 @@ $(document).ready(function() {
             arrows: false,
             autoplay: true,
             autoplaySpeed: 4000,
-            speed: 1200,
+            speed: 3000,
             slidesToShow: 5,
             slidesToScroll: 1,
             vertical: true,
