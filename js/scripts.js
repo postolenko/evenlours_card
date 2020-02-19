@@ -35,8 +35,6 @@ $(document).ready(function() {
         $(".big_slider").not(".slick-initialized").slick({
             dots: false,
             arrows: false,
-            autoplay: true,
-            autoplaySpeed: 4000,
             speed: 1200,
             slidesToShow: 1,
             slidesToScroll: 1,
@@ -48,8 +46,6 @@ $(document).ready(function() {
         $(".miniature_slider").not(".slick-initialized").slick({
             dots: false,
             arrows: false,
-            autoplay: true,
-            autoplaySpeed: 4000,
             speed: 3000,
             slidesToShow: 5,
             slidesToScroll: 1,
@@ -196,6 +192,9 @@ $(document).ready(function() {
           $(this).removeClass("active");
       }
     });
+
+ // ---------------
+     $("input[type='tel']").mask("+7 (999) 999-99-99");
 
 });
 

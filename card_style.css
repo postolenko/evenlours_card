@@ -1408,6 +1408,18 @@ a {
     color: #000000;
 }
 
+.four_cols ul li a {
+    font-family: "Segoe UI";
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 100%;
+    color: #960004;
+}
+
+.four_cols ul li a:hover {
+    text-decoration: underline;
+}
+
 .four_cols ul li:before {
     display: block;
     content: "";
@@ -1936,10 +1948,10 @@ a {
 .good_price {
     padding: 3px 0;
     font-family: "Segoe UI";
-    font-weight: normal;
+    font-weight: bold;
     font-size: 14px;
     line-height: 15px;
-    color: #828282;
+    color: #000000;
 }
 
 .info_box {
@@ -2139,8 +2151,12 @@ a {
 .modal-dialog {
   position: relative;
   width: auto;
-  margin: 0.5rem;
+  margin: 0 .5rem;
   pointer-events: none;
+  top: 50%;
+  -webkit-transform: translate(0, -50%) !important;
+  -moz-transform: translate(0, -50%) !important;
+  transform: translate(0, -50%) !important;
 }
 
 .modal.fade .modal-dialog {
@@ -2352,7 +2368,7 @@ a {
 
     .slider_templ .left_col {
         width: 100%;
-        padding: 10px 0;
+        padding: 10px 0 1px 0;
     }
 
     .slider_templ .right_col {
@@ -2492,12 +2508,12 @@ a {
 
     .two_cols_templ .col_1 {
         width: 100%;
-        padding: 3px 0;
+        padding: 2px 0;
     }
 
     .two_cols_templ .col_2 {
         width: 100%;
-        padding: 3px 0;
+        padding: 2px 0;
     }
 
     .price_wrapp {
@@ -2505,7 +2521,7 @@ a {
     }
 
     .grey_boxes {
-        margin: 5px -2px;
+        margin: 0 -2px 5px -2px;
     }
 
     .grey_boxes .col {
