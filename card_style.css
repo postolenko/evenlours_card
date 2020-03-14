@@ -2174,8 +2174,9 @@ a {
 }
 
 .modal.show .modal-dialog {
-  -webkit-transform: none;
-  transform: none;
+    -webkit-transform: none;
+    transform: none;
+    padding-top: 70px;
 }
 
 .modal.modal-static .modal-dialog {
